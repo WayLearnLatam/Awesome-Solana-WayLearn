@@ -6,41 +6,267 @@ En este repositorio encontrarás una colección de proyectos creados por miembro
 
 ![Banner Solana](./images/SolanaBanner.jpg)
 
-## Rust/Anchor
-| Nombre del Proyecto | Descripción | Enlace al Repositorio |
-|---------------------|-------------|-----------------------|
-| Trust Work Escrow v2 | Trust Work Escrow v2 es un protocolo on-chain que permite pagos seguros entre clientes y freelancers (individuales o equipos) sin intermediarios. Protocolo de escrow descentralizado en Solana para freelancers y clientes. Construido para el WayLearn Solana Hackathon. | https://github.com/davidcoachdev/Trust-Work-Escrow |
-| Block Gangs RPG | Block Gangs es un RPG de combate urbano que revive la esencia de los clásicos juegos de navegador "old school" (que marcaron una época de furor), pero reinventados para la era moderna mediante una faceta 3D inmersiva y la potencia de la red Solana a través de GameShift. | https://github.com/haracena/Block-gangs-solana |
-| stayke | Stayke es una plataforma descentralizada de alquileres a corto plazo construida sobre Solana que utiliza primitivos de blockchain para resolver el problema de confianza en el corazón de cualquier marketplace de hosting. Huéspedes y anfitriones interactúan a través de una arquitectura híbrida: los contratos inteligentes (Anchor) se encargan de garantías, escrow, reputación y bloqueos, mientras que un backend tradicional gestiona los listados de propiedades y la búsqueda. Un frontend en Next.js une ambas capas usando la clave pública del usuario como foreign key universal. | https://github.com/GestLabs2-0/stayke |
-| Coin0 Solana | Plataforma completa para crear, gestionar y distribuir tokens SPL en Solana, con soporte para airdrops on-chain mediante smart contracts Anchor. | https://github.com/vitalspace/coin0 |
-| Centlalia | Centlalia es una infraestructura de ticketing sobre Solana que redefine el boleto como un activo digital programable. Aquí, cada ticket no solo existe: también tiene reglas claras de circulación, propiedad y validación. El resultado es un sistema donde organizadores y asistentes operan con más seguridad, trazabilidad y confianza. A diferencia de las plataformas tradicionales que se enfocan casi exclusivamente en la venta inicial, Centlalia controla el ciclo completo del ticket: emisión, circulación y validación final en acceso. | https://github.com/MelenoiddCoding/centlalia |
-| Solana Science Network | Repositorio on-chain de articulos de investigación y divulgación cientifica. El proposito de este proyecto es compartir información de forma gratuita que incorpora un sistema de calificación, ranking y donaciones. | https://github.com/GuillermoMottu/ssn_project |
-| Waylearn Faucet | A DevNet SOL faucet, constrained not on time but on amount, with configurable upper limits. Based on previous work https://github.com/waldmatias/waylearn_faucet done during Waylearn's bootcamp. This program is deployed and working on DevNet: CozaAtw4wmRh1WT2zeLTu6jWYgrJotB7TRYdZZbusBNK Discord integration of faucet service using a Discord Bot and Slash commands. | https://github.com/waldmatias/waylearn-faucet-all |
-| Mintpass | Plataforma descentralizada de boletos digitales construida sobre Solana con Metaplex Core. | https://github.com/Kaxeck/Mintpass |
-| SkillProof DAO | Plataforma de reputacion y validacion de proyectos sobre Solana. El proyecto integra: Frontend web (Next.js) con la vista principal showcase. Backend API (Express + TypeScript) para autenticacion, sesiones y datos persistentes. Base de datos PostgreSQL (Supabase). Programa on-chain en Rust (carpeta programs/skillproof). | https://github.com/NaodusMoon/SkillProof_Dao/tree/main |
-| Blinkpass Protocol | Decentralized Ticketing & On-Chain Access Management BlinkPass Protocol redefine la industria de los eventos en vivo eliminando intermediarios abusivos. Permite a los organizadores vender boletos inmutables (NFTs) directamente en redes sociales mediante Solana Actions (Blinks) y validar accesos con una app móvil nativa. Además, incorpora un sistema de regalías automáticas (10%) en mercado secundario, devolviendo valor a los creadores. | https://github.com/Neghxul/blinkpass-protocol |
-| Sol Runner | SOL RUNNER es un juego web tipo arena roguelite conectado con Solana, donde el jugador inicia sesión con su wallet Phantom, firma un mensaje para autenticarse, entra a runs de combate por pisos, obtiene recompensas, compra mejoras y administra una colección de skins/personajes dentro del juego. El proyecto combina dos partes claramente definidas: una experiencia de juego web construida con HTML, CSS y JavaScript y una integración blockchain con Solana para autenticación y sistema de recompensas. La idea central del proyecto es que la wallet no sea solo un login decorativo, sino una identidad real del jugador dentro del sistema. | https://github.com/Polar2565/SOL-RUNNER |
-| SGBD Web3 Solana - Motor Hibrido | Es un motor de base de datos NoSQL híbrido basado en blockchain. A diferencia de un SGBD tradicional (como MongoDB o PostgreSQL) que guarda los datos en un servidor centralizado, este motor utiliza la red de Solana como una capa de indexación y control de acceso ultra-segura. | https://github.com/Jaccstudios/SGBD-Web3-Solana |
-| ImmuniChain | Verifiable, portable vaccination records on Solana. Instead of paper cards or siloed clinic databases, ImmuniChain gives patients a wallet-held NFT credential they control and share on their own terms — while clinics and admins share a single on-chain registry of who may issue, what product and lot was used, and when. | https://github.com/noe4400/ImmunityChain |
-| Musicsolana | A decentralized music investment platform built on Solana devnet for the Solana LATAM Hackathon. Artists raise funds by selling shares in their music projects. Investors earn revenue share when the music generates income — all on-chain, fully transparent. | https://github.com/juapperez/music-investment-solana |
-| Ocean Sense | Red descentralizada de boyas IoT operadas por pescadores artesanales que registran datos oceánicos en tiempo real en Solana, con recompensas automáticas en cPEN — una stablecoin pegged al Sol Peruano (PEN). | https://github.com/Gabrululu/OceanSense |
-| Medovant Protocol | Medovant crea gemelos digitales de equipos médicos en Solana. Cada evento del ciclo de vida queda registrado on-chain. Los pagos se bloquean en un vault PDA al reportar un problema y se liberan automáticamente cuando el mantenimiento está verificado por ambas partes. | https://github.com/licette32/medovant-protocol |
-| Solchan | project-solchan es un programa Solana construido con Anchor para registrar organizaciones, usuarios de organizaciones y proyectos de WayLearn bajo un flujo de validación. Capacidades actuales: Inicializar configuración global de plataforma. Crear organizaciones y cobrar una fee de creación configurable. Validar, suspender y eliminar organizaciones por parte del admin. Crear usuarios dentro de una organización y validarlos por autoridad de organización. Crear proyectos asociados a un usuario de organización. Permitir que el usuario edite su proyecto en Pending, Active o Suspended. Requerir validación de la organización para publicar un proyecto. Permitir que un proyecto suspendido vuelva a Pending cuando el usuario lo corrige. Emitir eventos on-chain para indexación e integración off-chain. | https://github.com/solchan-al |
-| GroundTruth | GroundTruth es una red DePIN (Decentralized Physical Infrastructure) en Solana que convierte nodos IoT de bajo costo en oráculos de datos agroclimáticos verificables. Cada lectura de sensor genera un certificado criptográfico on-chain. Los agricultores poseen sus datos. Los modelos de IA y reguladores (EUDR) los consumen directamente sin intermediarios. | https://github.com/J4rias/GroundTruth-Solana |
-| Atlas World Protocol | Atlas es un framework para construir mundos persistentes en Solana. Cada acción del jugador — recolectar un recurso, subir de nivel, aparecer en el leaderboard — queda registrada on-chain de forma permanente e inmutable. El mundo es compartido: lo que un jugador recolecta ya no está disponible para nadie más. El estado persiste entre sesiones, wallets y dispositivos. No hay servidor central. No hay base de datos. Solo Solana. | https://github.com/usainbluntmx/atlas |
-| Cubico | Cubico es una plataforma PropTech + Real World Assets (RWA) + Crowdfunding que permite fraccionar la inversión inmobiliaria en Venezuela a través de tokens en la blockchain de Solana. Los inversores pueden participar en campañas de financiamiento colectivo para adquirir propiedades con alto potencial de renta y plusvalía, todo con trazabilidad 100% on-chain. | https://github.com/victoraranguren/cubico-mvp-hackathon-solana-waylearn-2026 |
-| BlinkTasks | Marketplace descentralizado de tareas freelance construido sobre Solana. El pago se bloquea automáticamente al crear la tarea y se libera solo cuando el cliente aprueba la entrega — sin intermediarios, sin custodia centralizada. | https://github.com/Artur896/BlinkTasks |
-| Prediction Pool | Un mercado de predicciones 100% descentralizado y trustless (sin necesidad de confianza) construido en la blockchain de Solana. Esta dApp permite a los usuarios crear, participar y resolver mercados de predicción sin depender de intermediarios centralizados. Utiliza los oráculos de Pyth Network para resoluciones financieras automáticas y un modo manual para eventos sociales. | https://github.com/cruz-torres-dev/solana-pyth-oracle |
-| Ticket Inteligente | Smart Ticket and Loyalty System (Solana). Este programa es un contrato inteligente desarrollado con el framework Anchor (Rust) para la red de Solana. Su objetivo es gestionar el ciclo de vida de tickets para eventos, integrando un sistema de fidelización de usuarios basado en niveles (Tiers) y recompensas por asistencia. | https://github.com/JosxChz/Ticket-Inteligente/tree/main |
-| The discipline Stake | El objetivo final es crear una "bóveda de voluntad" (Willpower Vault). Los usuarios apuestan (stake) tokens SOL por una tarea; si cumplen, recuperan su capital con XP/HP extra. Si fallan, el capital se quema o se envía a una tesorería, y su personaje sufre daño crítico. | https://github.com/fiedri/The_discipline_stake |
-| Gimnasio-Solana | Sistema de gestión de un gimnasio desarrollado como Solana Program usando Rust + Anchor. Permite registrar miembros, gestionar rutinas de entrenamiento y acumular puntos de fitness, todo almacenado on-chain en la red Solana. | https://github.com/NixonVaultCode/Gimnasio-Solana |
-| Trust-Work-Escrow | El proyecto Trust Work Escrow surge para resolver los problemas de confianza en el trabajo remoto, donde clientes y freelancers corren el riesgo de no recibir el trabajo o el pago acordado, además de enfrentar soluciones tradicionales costosas y poco eficientes. La plataforma propone un sistema de escrow on-chain en Solana: el cliente deposita los fondos en un vault seguro, el freelancer entrega el trabajo y, tras la aprobación, el pago se libera automáticamente. En caso de disputa, un árbitro interviene y distribuye los fondos de forma justa. | https://github.com/davidcoachdev/Trust-Work-Escrow |
-| AnimeChain-Solana | Cada usuario que interactúa con el programa obtiene una PDA (Program Derived Address) única — una cuenta especial en la blockchain que actúa como su base de datos personal de animes. Esta cuenta es controlada exclusivamente por el programa y solo puede ser modificada por su dueño (owner). | https://github.com/YhonaPeguero/AnimeChain-Solana |
-| Uma Solana | A text-based game inspired by Umamusume Pretty Derby, built in Rust. Train your Uma, manage her energy and mood, and compete in races. Lose too many times and she might retire for good. The project has two versions: a local CLI and an on-chain Solana program built with Anchor. | https://github.com/Hyromy/Uma-Solana |
-| Boxchain | BoxChain — Torneos de box on-chain en Solana. Registra boxeadores, torneos y peleas. Los récords se actualizan automáticamente en la blockchain tras cada resultado 🏆 | https://github.com/JDaniel85/Box_Chain |
-| INFRAESTRUCTURA PUBLICA DIGITAL PARA EL ECOSISTEMA VEHICULAR DE ONTARIO - SOL Car P2P Ontario | ste proyecto imagina un escenario donde el Ministry of Transportation of Ontario (MTO) ha tokenizado todos los vehículos registrados como NFTs en la blockchain de Solana. Cuando dos particulares realizan una compraventa: Vendedor y comprador están frente al auto ↓ Ambos conectan su wallet ↓ Vendedor lista el vehículo con el precio acordado ↓ Comprador ejecuta la transacción ↓ El contrato divide automáticamente: ├── Precio acordado → Vendedor (al instante) ├── 13% HST → MTO Ontario (automático) └── 0.5% fee → Protocolo ↓ El NFT del vehículo se transfiere al comprador Todo en una sola transacción. Sin filas. Sin papel. | https://github.com/MemoLabPRO/sol-car-p2p-ontario |
-| MediPin World | MediPin World is a decentralized health infrastructure layer that puts hospitals, donors, and health data on-chain — creating a permissionless, auditable, and borderless network for global healthcare funding. | https://github.com/cosu123/medpin-world |
-| pit_lane | Programa en Solana desarrollado con Anchor para registrar resultados de carreras de F1 on-chain. El contrato permite guardar resultados por carrera, validar reglas del podio y calcular puntos de forma determinística, incorporando condiciones de pista y el punto extra por vuelta rápida. | https://github.com/omancillav/pit_lane.git |
-| Mi-Proyecto-Solana | El clasico proyecto de la biblioteca en Solana mejorado para una mayor gestion de informacion por libro y registro de clientes | https://github.com/bowsak/Mi-Proyecto-Solana/tree/main |
-| solana-chat | Project Comments es un programa on-chain desarrollado en Solana (usando Anchor) que permite crear sistemas de comentarios descentralizados para publicaciones externas. El proyecto habilita la creación de hilos asociados a posts, donde los usuarios pueden comentar, responder, editar y eliminar mensajes, así como añadir reacciones. Incluye controles de elegibilidad de usuarios, moderación (bloqueo de hilos, eliminación por admins o autores) y validaciones de seguridad para garantizar la integridad de los datos. | https://github.com/augustofavrearg/solana-chat |
+## 📑 Índice por categoría
+
+- [💸 DeFi & Pagos](#-defi--pagos)
+- [🎟️ Tickets & Eventos](#️-tickets--eventos)
+- [🎮 Gaming & NFTs](#-gaming--nfts)
+- [🏗️ Infraestructura & Herramientas](#️-infraestructura--herramientas)
+- [🌍 Impacto Social & Ciencia](#-impacto-social--ciencia)
+- [🏠 Real Estate & PropTech](#-real-estate--proptech)
+- [🏥 Salud](#-salud)
+- [🎵 Arte & Cultura](#-arte--cultura)
+
 ---
+
+## 💸 DeFi & Pagos
+
+### [Trust Work Escrow v2](https://github.com/davidcoachdev/Trust-Work-Escrow)
+Protocolo on-chain para pagos seguros entre clientes y freelancers — sin intermediarios. El cliente deposita fondos en un vault; el freelancer entrega el trabajo; el pago se libera automáticamente tras la aprobación. En caso de disputa, un árbitro distribuye los fondos de forma justa.
+
+> `escrow` · `freelance` · `Anchor` · `Solana`
+
+---
+
+### [BlinkTasks](https://github.com/Artur896/BlinkTasks)
+Marketplace descentralizado de tareas freelance sobre Solana. El pago se bloquea al crear la tarea y se libera solo cuando el cliente aprueba la entrega — sin custodia centralizada.
+
+> `marketplace` · `freelance` · `escrow`
+
+---
+
+### [Coin0 Solana](https://github.com/vitalspace/coin0)
+Plataforma completa para crear, gestionar y distribuir tokens SPL en Solana, con soporte para airdrops on-chain mediante smart contracts Anchor.
+
+> `SPL tokens` · `airdrop` · `Anchor`
+
+---
+
+### [Prediction Pool](https://github.com/cruz-torres-dev/solana-pyth-oracle)
+Mercado de predicciones 100% descentralizado y trustless en Solana. Los usuarios crean, participan y resuelven mercados sin intermediarios. Usa oráculos de **Pyth Network** para resoluciones financieras automáticas y un modo manual para eventos sociales.
+
+> `prediction market` · `Pyth` · `oracle` · `trustless`
+
+---
+
+### [The Discipline Stake](https://github.com/fiedri/The_discipline_stake)
+Una *Willpower Vault*: los usuarios apuestan SOL por una tarea. Si cumplen, recuperan su capital con XP/HP extra. Si fallan, el capital se quema o se envía a tesorería, y su personaje sufre daño crítico.
+
+> `staking` · `gamification` · `productividad`
+
+---
+
+## 🎟️ Tickets & Eventos
+
+### [Centlalia](https://github.com/MelenoiddCoding/centlalia)
+Infraestructura de ticketing sobre Solana que redefine el boleto como un activo digital programable. Controla el ciclo completo: emisión, circulación y validación final en acceso — con reglas claras de propiedad y trazabilidad total.
+
+> `ticketing` · `NFT` · `eventos` · `Anchor`
+
+---
+
+### [BlinkPass Protocol](https://github.com/Neghxul/blinkpass-protocol)
+Redefine la industria de eventos en vivo eliminando intermediarios. Vende boletos inmutables (NFTs) directamente en redes sociales mediante **Solana Actions (Blinks)** y valida accesos con app móvil nativa. Incluye regalías automáticas del 10% en mercado secundario.
+
+> `blinks` · `NFT tickets` · `regalías` · `live events`
+
+---
+
+### [Mintpass](https://github.com/Kaxeck/Mintpass)
+Plataforma descentralizada de boletos digitales construida sobre Solana con **Metaplex Core**.
+
+> `Metaplex` · `NFT` · `boletos digitales`
+
+---
+
+### [Ticket Inteligente](https://github.com/JosxChz/Ticket-Inteligente/tree/main)
+Smart Ticket & Loyalty System en Solana. Gestiona el ciclo de vida de tickets para eventos con un sistema de fidelización basado en niveles (Tiers) y recompensas por asistencia.
+
+> `loyalty` · `tiers` · `eventos` · `Anchor` · `Rust`
+
+---
+
+## 🎮 Gaming & NFTs
+
+### [Block Gangs RPG](https://github.com/haracena/Block-gangs-solana)
+RPG de combate urbano que revive los clásicos juegos de navegador *old school*, reinventados con una faceta 3D inmersiva y la potencia de Solana a través de **GameShift**.
+
+> `RPG` · `GameShift` · `3D` · `browser game`
+
+---
+
+### [Sol Runner](https://github.com/Polar2565/SOL-RUNNER)
+Juego web tipo arena roguelite conectado con Solana. El jugador inicia sesión con su wallet Phantom, firma un mensaje para autenticarse, entra a runs de combate por pisos, obtiene recompensas y administra skins/personajes. La wallet es identidad real dentro del sistema.
+
+> `roguelite` · `Phantom` · `arena` · `web game` · `JavaScript`
+
+---
+
+### [Atlas World Protocol](https://github.com/usainbluntmx/atlas)
+Framework para construir mundos persistentes en Solana. Cada acción del jugador queda registrada on-chain de forma permanente. El mundo es compartido y el estado persiste entre sesiones, wallets y dispositivos. Sin servidor central. Sin base de datos. Solo Solana.
+
+> `gamefi` · `mundo persistente` · `on-chain state`
+
+---
+
+### [Uma Solana](https://github.com/Hyromy/Uma-Solana)
+Juego de texto inspirado en *Umamusume Pretty Derby*, construido en Rust. Entrena a tu Uma, gestiona su energía y ánimo, y compite en carreras. Disponible como CLI local y como programa on-chain con Anchor.
+
+> `text game` · `Rust` · `CLI` · `Anchor`
+
+---
+
+
+## 🏗️ Herramientas & Bases de Datos
+
+### [AnimeChain-Solana](https://github.com/YhonaPeguero/AnimeChain-Solana)
+Cada usuario obtiene una PDA única que actúa como su base de datos personal de animes en la blockchain, controlada exclusivamente por el programa y modificable solo por su dueño.
+
+> `PDA` · `on-chain data` · `Anchor`
+
+---
+
+### [Boxchain](https://github.com/JDaniel85/Box_Chain)
+Torneos de box on-chain en Solana. Registra boxeadores, torneos y peleas. Los récords se actualizan automáticamente en la blockchain tras cada resultado. 🥊
+
+> `deportes` · `torneos` · `on-chain records`
+
+---
+
+### [Waylearn Faucet](https://github.com/waldmatias/waylearn-faucet-all)
+Faucet de DevNet SOL con límite por cantidad (no por tiempo), con topes configurables. Desplegado y funcional en DevNet. Incluye integración con Discord Bot mediante Slash Commands.
+
+> `faucet` · `DevNet` · `Discord bot` · `herramienta`
+
+---
+
+### [Solchan](https://github.com/solchan-al)
+Programa Solana (Anchor) para registrar organizaciones, usuarios y proyectos de WayLearn bajo un flujo de validación. Incluye gestión de estados, fees configurables, moderación admin y eventos on-chain para indexación off-chain.
+
+> `organizaciones` · `validación` · `plataforma` · `Anchor`
+
+---
+
+### [SGBD Web3 Solana — Motor Híbrido](https://github.com/Jaccstudios/SGBD-Web3-Solana)
+Motor de base de datos NoSQL híbrido basado en blockchain. Usa la red Solana como capa de indexación y control de acceso ultra-segura, en lugar de un servidor centralizado tradicional.
+
+> `base de datos` · `NoSQL` · `indexación` · `on-chain`
+
+---
+
+### [SkillProof DAO](https://github.com/NaodusMoon/SkillProof_Dao/tree/main)
+Plataforma de reputación y validación de proyectos sobre Solana. Integra frontend Next.js, backend Express + TypeScript, PostgreSQL (Supabase) y programa on-chain en Rust.
+
+> `reputación` · `DAO` · `Next.js` · `Supabase` · `Rust`
+
+---
+
+### [solana-chat](https://github.com/augustofavrearg/solana-chat)
+Sistema de comentarios descentralizado para publicaciones externas. Permite crear hilos asociados a posts, comentar, responder, editar, eliminar y añadir reacciones. Incluye moderación y controles de elegibilidad.
+
+> `chat` · `comentarios` · `hilos` · `moderación` · `Anchor`
+
+---
+
+
+### [pit\_lane](https://github.com/omancillav/pit_lane.git)
+Programa Anchor para registrar resultados de carreras de F1 on-chain. Guarda resultados por carrera, valida reglas del podio y calcula puntos de forma determinística, incluyendo condiciones de pista y punto extra por vuelta rápida.
+
+> `F1` · `deportes` · `resultados on-chain` · `Anchor`
+
+---
+
+### [Mi-Proyecto-Solana](https://github.com/bowsak/Mi-Proyecto-Solana/tree/main)
+El clásico proyecto de biblioteca en Solana, mejorado con mayor gestión de información por libro y registro de clientes.
+
+> `biblioteca` · `CRUD` · `Anchor`
+
+---
+
+## 🌍 Impacto Social & Ciencia
+
+### [Ocean Sense](https://github.com/Gabrululu/OceanSense)
+Red descentralizada de boyas IoT operadas por pescadores artesanales que registran datos oceánicos en tiempo real en Solana, con recompensas automáticas en **cPEN** — stablecoin pegged al Sol Peruano (PEN).
+
+> `DePIN` · `IoT` · `pesca` · `stablecoin` · `datos oceánicos`
+
+---
+
+### [GroundTruth](https://github.com/J4rias/GroundTruth-Solana)
+Red DePIN en Solana que convierte nodos IoT de bajo costo en oráculos de datos agroclimáticos verificables. Cada lectura genera un certificado criptográfico on-chain. Los agricultores poseen sus datos; los modelos de IA y reguladores (EUDR) los consumen sin intermediarios.
+
+> `DePIN` · `IoT` · `agricultura` · `oráculo` · `EUDR`
+
+---
+
+### [Solana Science Network](https://github.com/GuillermoMottu/ssn_project)
+Repositorio on-chain de artículos de investigación y divulgación científica. Comparte información de forma gratuita con sistema de calificación, ranking y donaciones.
+
+> `ciencia abierta` · `publicaciones` · `donaciones` · `ranking`
+
+---
+
+### [SOL Car P2P Ontario](https://github.com/MemoLabPRO/sol-car-p2p-ontario)
+Infraestructura pública digital para el ecosistema vehicular de Ontario. Imagina un escenario donde el MTO tokenizó todos los vehículos como NFTs en Solana. Las compraventas entre particulares dividen automáticamente el pago: precio al vendedor, 13% HST al gobierno y 0.5% de fee al protocolo — en una sola transacción.
+
+> `RWA` · `gobierno` · `NFT` · `vehículos` · `Ontario`
+
+---
+
+### [Gimnasio-Solana](https://github.com/NixonVaultCode/Gimnasio-Solana)
+Sistema de gestión de un gimnasio como programa Solana (Rust + Anchor). Registra miembros, gestiona rutinas de entrenamiento y acumula puntos de fitness — todo almacenado on-chain.
+
+> `gimnasio` · `fitness` · `puntos` · `Rust` · `Anchor`
+
+---
+
+## 🏠 Real Estate & PropTech
+
+### [stayke](https://github.com/GestLabs2-0/stayke)
+Plataforma descentralizada de alquileres a corto plazo sobre Solana. Resuelve el problema de confianza en marketplaces de hosting con una arquitectura híbrida: smart contracts (Anchor) para garantías, escrow, reputación y bloqueos; backend tradicional para listados y búsqueda; frontend Next.js que une ambas capas usando la clave pública del usuario como foreign key universal.
+
+> `alquileres` · `marketplace` · `Anchor` · `Next.js` · `escrow`
+
+---
+
+### [Cubico](https://github.com/victoraranguren/cubico-mvp-hackathon-solana-waylearn-2026)
+Plataforma PropTech + RWA + Crowdfunding que permite fraccionar la inversión inmobiliaria en Venezuela a través de tokens en Solana. Los inversores participan en campañas de financiamiento colectivo para adquirir propiedades con alto potencial de renta y plusvalía — con trazabilidad 100% on-chain.
+
+> `RWA` · `crowdfunding` · `inmobiliaria` · `Venezuela` · `tokens`
+
+---
+
+## 🏥 Salud
+
+### [ImmuniChain](https://github.com/noe4400/ImmunityChain)
+Registros de vacunación verificables y portátiles en Solana. En lugar de tarjetas de papel o bases de datos clínicas aisladas, los pacientes tienen un NFT credential en su wallet que controlan y comparten en sus propios términos, mientras clínicas y admins comparten un único registro on-chain.
+
+> `salud` · `vacunación` · `NFT credential` · `portabilidad`
+
+---
+
+### [Medovant Protocol](https://github.com/licette32/medovant-protocol)
+Crea gemelos digitales de equipos médicos en Solana. Cada evento del ciclo de vida queda registrado on-chain. Los pagos se bloquean en un vault PDA al reportar un problema y se liberan automáticamente cuando el mantenimiento es verificado por ambas partes.
+
+> `salud` · `IoT` · `gemelo digital` · `escrow` · `PDA`
+
+---
+
+### [MediPin World](https://github.com/cosu123/medpin-world)
+Capa de infraestructura de salud descentralizada que pone hospitales, donantes y datos médicos on-chain — creando una red permissionless, auditable y sin fronteras para el financiamiento global de la salud.
+
+> `salud global` · `donaciones` · `infraestructura` · `auditable`
+
+---
+
+## 🎵 Arte & Cultura
+
+### [Musicsolana](https://github.com/juapperez/music-investment-solana)
+Plataforma descentralizada de inversión musical en Solana devnet. Los artistas levantan fondos vendiendo participaciones en sus proyectos musicales. Los inversores ganan revenue share cuando la música genera ingresos — todo on-chain y completamente transparente.
+
+> `música` · `inversión` · `revenue share` · `artistas`
+
+---
+[⬆️ Volver al Índice](#-índice-por-categoría)
+
+*Construido con ❤️ por la comunidad LATAM durante el WayLearn Solana Hackathon.*
